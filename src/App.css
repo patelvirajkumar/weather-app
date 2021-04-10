@@ -1,0 +1,121 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'montserait', sans-serif;
+}
+
+.app{
+  display: flex;
+  justify-content: center;
+  background-image: url(https://images.unsplash.com/photo-1544397189-b5a684ee08d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease-out;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.app-warm{
+  background-image: url(https://images.unsplash.com/photo-1499949059451-9a1119d4e912?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+ 
+  background-size: cover;
+  background-position: bottom;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.search-box{
+
+display: flex;
+width: 100%;
+height: 50px;
+justify-content: center;
+margin-top: -200px;
+
+
+}
+
+.search-box input{
+  width:80%;
+  border-radius: 10px;
+  appearance: none;
+
+  border: none;
+  outline:none;
+  box-shadow: 0px 5px rgba(0,0,0,0.2);
+}
+
+.loacation-box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+ .location{
+
+  color:#fff;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50,50,70,0.5);
+}
+
+.date{
+
+  color:#fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 2px 2px rgba(50,50,70,0.5);
+}
+
+.weather-box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+
+}
+
+.temp{
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+  padding: 15px 25px;
+  font-size: 102px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: rgba(255,255,255,0.3);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather{
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: rgba(50,50,70,0.5);
+  margin-top: 10px;
+}
+
+
+@media  (max-width: 428px){
+  
+
+  .app{
+     background-size: cover;
+   background-repeat: no-repeat;
+   
+  }
+.search-box{  
+  margin-top: 0; 
+  }
+  
+  
+}
